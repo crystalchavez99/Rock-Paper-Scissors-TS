@@ -22,9 +22,9 @@ function randomChoice(): string {
 }
 
 let player1 = randomChoice();
-let player2 = randomChoice()
+let player2 = randomChoice();
 
-function winner(p1: string, p2: string) {
+function winner(p1: string, p2: string): string {
     console.log(p1, p2)
     if (p1 == p2) {
         return `It's a tie!`

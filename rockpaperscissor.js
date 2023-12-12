@@ -36,4 +36,5 @@ function winner(p1, p2) {
         }
     }
 }
-console.log(winner(player1, player2));
+var result = winner(player1, player2);
+console.log(result);
