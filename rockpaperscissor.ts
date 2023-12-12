@@ -28,10 +28,14 @@ function winner(p1: string, p2: string) {
     console.log(p1, p2)
     if (p1 == p2) {
         return `It's a tie!`
-    }else if(action[p1].wins === action[p2].loses){
-        return `Player 1 Wins!`
-    }else if(action[p2].wins === action[p1].loses){
-        return `Player 2 Wins!`
+    }
+    for(let key in action){
+        let instance = action[key].value
+        if(instance == p1 && action[key].wins == p2){
+            return `Player 1 Wins!`
+        }else  if(instance == p2 && action[key].wins == p1){
+            return `Player 2 Wins!`
+        }
     }
 
 }
