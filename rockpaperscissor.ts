@@ -39,5 +39,5 @@ function winner(p1: string, p2: string) {
     }
 
 }
-
-console.log(winner(player1,player2));
+let result = winner(player1,player2);
+console.log(result);
